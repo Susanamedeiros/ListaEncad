@@ -61,10 +61,12 @@ public class ListEncad {
 	}
 
 	public void imprime(){
-		while(FimDaLista())
-	    {
-	        System.out.println(Consulta() + " ");
-	        ProximoNo();
-	    }
+		No p;
+		p = this.pri;
+		if(p != null){
+			for(p = this.pri; p != null; p = p.consultaProx()){
+				System.out.println(p.consultaInfo() + "  ");
+			}
+		}
 	}
 }

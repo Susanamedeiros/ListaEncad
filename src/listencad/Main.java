@@ -11,10 +11,11 @@ public class Main {
 		tam = scanner.nextInt();
 		ListEncad l = new ListEncad();
 		System.out.println("Digite números inteiros: ");
-		for(i=0; i <= tam; i++){
+		for(i=0; i < tam; i++){
 			valor = scanner.nextFloat();
 			l.InserePri(valor);
 		}
+		l.Inicio();
 		l.imprime();
 		scanner.close();
 	}
